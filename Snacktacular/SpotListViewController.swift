@@ -8,6 +8,7 @@
 import UIKit
 
 class SpotListViewController: UIViewController {
+    @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
     var spots = ["Pelon", "Pinos", "Fajitas n Ritas"]
@@ -16,9 +17,19 @@ class SpotListViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        configureSegmentedControl()
         // Do any additional setup after loading the view.
     }
-
+    func configureSegmentedControl() {
+        //set font colors
+        let orangeFontColor = [NSAttributedString.Key.foregroundColor : UIColor(named: "PrimaryColor") ?? UIColor.orange]
+        let whiteFontColor = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        sortSegmentedControl.setTitleTextAttributes(orangeFontColor, for: .selected)
+        sortSegmentedControl.setTitleTextAttributes(whiteFontColor, for: .normal)
+        //add white border
+        sortSegmentedControl.layer.borderColor = UIColor.white.cgColor
+        sortSegmentedControl.layer.borderWidth = 1.0
+    }
 
 }
 extension SpotListViewController: UITableViewDelegate, UITableViewDataSource {
