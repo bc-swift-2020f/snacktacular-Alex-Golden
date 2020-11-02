@@ -20,6 +20,8 @@
 		F9D7D4CC25488CF800B2BE56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D7D4CA25488CF800B2BE56 /* LaunchScreen.storyboard */; };
 		F9D7D4D725488CF900B2BE56 /* SnacktacularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D7D4D625488CF900B2BE56 /* SnacktacularTests.swift */; };
 		F9D7D4E225488CF900B2BE56 /* SnacktacularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D7D4E125488CF900B2BE56 /* SnacktacularUITests.swift */; };
+		F9F871A5254FB9CD00F25AB4 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F871A4254FB9CD00F25AB4 /* Spot.swift */; };
+		F9F871EC254FD1D800F25AB4 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F871EB254FD1D700F25AB4 /* UIViewController+Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		F9D7D4DD25488CF900B2BE56 /* SnacktacularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnacktacularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D7D4E125488CF900B2BE56 /* SnacktacularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacktacularUITests.swift; sourceTree = "<group>"; };
 		F9D7D4E325488CF900B2BE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F871A4254FB9CD00F25AB4 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		F9F871EB254FD1D700F25AB4 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 			children = (
 				F9D7D4BF25488CF300B2BE56 /* AppDelegate.swift */,
 				F9D7D4C125488CF300B2BE56 /* SceneDelegate.swift */,
+				F9F871A4254FB9CD00F25AB4 /* Spot.swift */,
 				F9D7D4C325488CF300B2BE56 /* LogInViewController.swift */,
 				F9166D29254B765300EFE32C /* SpotListViewController.swift */,
 				F9166D2E254B88EE00EFE32C /* SpotTableViewCell.swift */,
@@ -131,6 +136,7 @@
 				F9D7D4C525488CF300B2BE56 /* Main.storyboard */,
 				F9D7D4C825488CF800B2BE56 /* Assets.xcassets */,
 				F9D7D4CA25488CF800B2BE56 /* LaunchScreen.storyboard */,
+				F9F871EB254FD1D700F25AB4 /* UIViewController+Alert.swift */,
 				F9D7D4CD25488CF800B2BE56 /* Info.plist */,
 				F9927D9F2548B852000DA50C /* GoogleService-Info.plist */,
 			);
@@ -362,7 +368,9 @@
 				F9D7D4C025488CF300B2BE56 /* AppDelegate.swift in Sources */,
 				F9166D34254B8CCD00EFE32C /* SpotDetailViewController.swift in Sources */,
 				F9166D2F254B88EE00EFE32C /* SpotTableViewCell.swift in Sources */,
+				F9F871A5254FB9CD00F25AB4 /* Spot.swift in Sources */,
 				F9D7D4C225488CF300B2BE56 /* SceneDelegate.swift in Sources */,
+				F9F871EC254FD1D800F25AB4 /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

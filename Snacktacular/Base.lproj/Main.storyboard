@@ -227,6 +227,7 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="UsX-cZ-6Ey" firstAttribute="top" secondItem="gxk-6i-eVt" secondAttribute="bottom" constant="242" id="0pr-22-THn"/>
                                     <constraint firstItem="2I2-VR-4At" firstAttribute="top" secondItem="gxk-6i-eVt" secondAttribute="bottom" constant="4" id="7BI-b2-SHC"/>
@@ -286,6 +287,12 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="aXK-Zj-KPT" id="7JA-xl-1kW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="fpO-CC-MIj">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="aXK-Zj-KPT" id="W1x-Xv-AC4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
