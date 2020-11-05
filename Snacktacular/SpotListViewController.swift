@@ -11,7 +11,7 @@ class SpotListViewController: UIViewController {
     @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
-    var spots = Spots!
+    var spots: Spots!
     
     override func viewDidLoad() {
         super.viewDidLoad()
