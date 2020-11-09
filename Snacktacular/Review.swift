@@ -31,8 +31,19 @@ class Review {
     convenience init() {
         let reviewUserID = Auth.auth().currentUser?.uid ?? ""
         self.init(title: "", text: "", rating: 0, reviewUserID: reviewUserID, date: Date(), DocumentID: "")
-        
     }
+    convenience init(dictionary: [String: Any]) {
+        let title = dictionary["title"] as! String? ?? ""
+        let text = dictionary["text"] as! String? ?? ""
+        let rating = dictionary["rating"] as! Int ?? 0
+        let reviewUserID = dictionary["reviewUserID"] as! String? ?? ""
+        let documentID = dictionary["documentID"] as! String? ?? ""
+        let timeIntervalDate = dictionary["date"] as! TimeInterval? ?? TimeInterval()
+        let date = Date(timeIntervalSince1970: timeIntervalDate)
+        
+        self.init(title: title, text: text, rating: rating, reviewUserID: reviewUserID, date: date, DocumentID: documentID)
+    }
+    
     func saveData(spot: Spot, completion: @escaping (Bool) -> ()) {
            let db = Firestore.firestore()
            // create the dictionary representing data we want to save

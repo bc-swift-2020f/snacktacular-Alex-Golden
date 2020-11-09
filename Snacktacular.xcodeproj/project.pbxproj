@@ -14,6 +14,7 @@
 		F92EB09B2559927400868B1F /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB09A2559927400868B1F /* ReviewTableViewController.swift */; };
 		F92EB0A02559992B00868B1F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB09F2559992B00868B1F /* Review.swift */; };
 		F92EB0A52559A78300868B1F /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB0A42559A78300868B1F /* Reviews.swift */; };
+		F92EB10D2559BBE600868B1F /* SpotReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB10C2559BBE600868B1F /* SpotReviewTableViewCell.swift */; };
 		F9927DA02548B852000DA50C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9927D9F2548B852000DA50C /* GoogleService-Info.plist */; };
 		F9D7D4C025488CF300B2BE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D7D4BF25488CF300B2BE56 /* AppDelegate.swift */; };
 		F9D7D4C225488CF300B2BE56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D7D4C125488CF300B2BE56 /* SceneDelegate.swift */; };
@@ -56,6 +57,7 @@
 		F92EB09A2559927400868B1F /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		F92EB09F2559992B00868B1F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		F92EB0A42559A78300868B1F /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		F92EB10C2559BBE600868B1F /* SpotReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReviewTableViewCell.swift; sourceTree = "<group>"; };
 		F9927D9F2548B852000DA50C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F9D7D4BC25488CF300B2BE56 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D7D4BF25488CF300B2BE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				F9166D29254B765300EFE32C /* SpotListViewController.swift */,
 				F9166D2E254B88EE00EFE32C /* SpotTableViewCell.swift */,
 				F9166D33254B8CCD00EFE32C /* SpotDetailViewController.swift */,
+				F92EB10C2559BBE600868B1F /* SpotReviewTableViewCell.swift */,
 				F92EB09A2559927400868B1F /* ReviewTableViewController.swift */,
 				F9D7D4C525488CF300B2BE56 /* Main.storyboard */,
 				F9D7D4C825488CF800B2BE56 /* Assets.xcassets */,
@@ -387,6 +390,7 @@
 				F92EB0A02559992B00868B1F /* Review.swift in Sources */,
 				F9F871F125505E5000F25AB4 /* Spots.swift in Sources */,
 				F9166D2F254B88EE00EFE32C /* SpotTableViewCell.swift in Sources */,
+				F92EB10D2559BBE600868B1F /* SpotReviewTableViewCell.swift in Sources */,
 				F9F8725925506F4500F25AB4 /* APIKeys.swift in Sources */,
 				F9F871A5254FB9CD00F25AB4 /* Spot.swift in Sources */,
 				F9D7D4C225488CF300B2BE56 /* SceneDelegate.swift in Sources */,
