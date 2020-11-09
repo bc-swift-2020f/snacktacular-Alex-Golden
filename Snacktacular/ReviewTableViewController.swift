@@ -18,11 +18,30 @@ class ReviewTableViewController: UITableViewController {
     @IBOutlet weak var reviewDateLabel: UILabel!
     @IBOutlet weak var reviewTextView: UITextView!
     @IBOutlet weak var deleteButton: UIButton!
-    
+    var review: Review!
+    var spot: Spot!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        guard spot != nil else {
+            print("Error no spot passed to reviewtableVC")
+            return
+        }
+        if review == nil {
+        review = Review()
+        }
+        updateUserInterface()
     }
+    func updateUserInterface() {
+        nameLabel.text = spot.name
+        addressLabel.text = spot.address
+        reviewTitleField.text = review.title
+        reviewTextView.text = review.text
+    }
+    func updateFromUserInterface() {
+        review.title = reviewTitleField.text!
+        review.text = reviewTextView.text!
+    }
+    
     func leaveViewController() {
         let isPresentingInAddMode = presentingViewController is UINavigationController
         if isPresentingInAddMode {
@@ -39,6 +58,15 @@ class ReviewTableViewController: UITableViewController {
     @IBAction func deleteButtonPressed(_ sender: UIButton) {
     }
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        updateFromUserInterface()
+        review.saveData(spot: spot) { (success) in
+            if success {
+                self.leaveViewController()
+            } else {
+                print("error cant unwind from segue from review saving error")
+            }
+        }
+        
     }
     
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
