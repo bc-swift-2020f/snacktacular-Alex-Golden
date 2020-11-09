@@ -356,6 +356,11 @@
                                         <connections>
                                             <outlet property="reviewTextLabel" destination="Uj2-GZ-gG7" id="ndw-Rd-T8G"/>
                                             <outlet property="reviewTitleLabel" destination="wHZ-5Z-8qf" id="oav-AQ-oPa"/>
+                                            <outletCollection property="starImageCollection" destination="NzC-WG-WKa" collectionClass="NSMutableArray" id="JOI-3f-zGB"/>
+                                            <outletCollection property="starImageCollection" destination="9Ql-rT-4Bp" collectionClass="NSMutableArray" id="IaF-8P-KMu"/>
+                                            <outletCollection property="starImageCollection" destination="TTp-tu-kC4" collectionClass="NSMutableArray" id="opM-pD-TNN"/>
+                                            <outletCollection property="starImageCollection" destination="On9-zd-DWt" collectionClass="NSMutableArray" id="mtg-8g-1Q6"/>
+                                            <outletCollection property="starImageCollection" destination="dYE-Cy-vYv" collectionClass="NSMutableArray" id="QZU-0D-Bgv"/>
                                             <segue destination="CxJ-Jf-8SL" kind="show" identifier="ShowReview" id="I1b-tJ-mHs"/>
                                         </connections>
                                     </tableViewCell>
@@ -502,6 +507,9 @@
                                                             <state key="normal" image="star-empty">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="CxJ-Jf-8SL" eventType="touchUpInside" id="o0f-Ti-JfT"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arf-bo-rJZ">
                                                             <rect key="frame" x="42" y="0.0" width="40" height="40"/>
@@ -730,6 +738,11 @@
                         <outlet property="reviewTextView" destination="JuY-E6-uFf" id="ejT-J0-tuN"/>
                         <outlet property="reviewTitleField" destination="I5G-9m-SJn" id="Fv7-Yh-DsY"/>
                         <outlet property="saveBarButton" destination="7Dl-Xi-SSw" id="7ac-5C-XaG"/>
+                        <outletCollection property="starButtonCollection" destination="wGD-ET-tHP" collectionClass="NSMutableArray" id="0LW-n6-g7k"/>
+                        <outletCollection property="starButtonCollection" destination="arf-bo-rJZ" collectionClass="NSMutableArray" id="LCV-DN-YAm"/>
+                        <outletCollection property="starButtonCollection" destination="qHa-Ct-bsL" collectionClass="NSMutableArray" id="lgr-i1-asT"/>
+                        <outletCollection property="starButtonCollection" destination="hwp-73-b5W" collectionClass="NSMutableArray" id="IFu-lF-KP2"/>
+                        <outletCollection property="starButtonCollection" destination="rRD-nU-Ord" collectionClass="NSMutableArray" id="Abn-m2-qHN"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ci-MC-YEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
