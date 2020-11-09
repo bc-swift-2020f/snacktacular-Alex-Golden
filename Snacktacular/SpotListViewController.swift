@@ -81,7 +81,7 @@ extension SpotListViewController: UITableViewDelegate, UITableViewDataSource {
         if let currentLocation = currentLocation {
             cell.currentLocation = currentLocation
         }
-        cell.spot = spotArray[indexPath.row]
+        cell.spot = spots.spotArray[indexPath.row]
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
