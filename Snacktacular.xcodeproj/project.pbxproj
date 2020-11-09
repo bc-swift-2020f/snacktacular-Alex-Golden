@@ -11,6 +11,7 @@
 		F9166D2A254B765300EFE32C /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9166D29254B765300EFE32C /* SpotListViewController.swift */; };
 		F9166D2F254B88EE00EFE32C /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9166D2E254B88EE00EFE32C /* SpotTableViewCell.swift */; };
 		F9166D34254B8CCD00EFE32C /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9166D33254B8CCD00EFE32C /* SpotDetailViewController.swift */; };
+		F92EB09B2559927400868B1F /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB09A2559927400868B1F /* ReviewTableViewController.swift */; };
 		F9927DA02548B852000DA50C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9927D9F2548B852000DA50C /* GoogleService-Info.plist */; };
 		F9D7D4C025488CF300B2BE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D7D4BF25488CF300B2BE56 /* AppDelegate.swift */; };
 		F9D7D4C225488CF300B2BE56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D7D4C125488CF300B2BE56 /* SceneDelegate.swift */; };
@@ -50,6 +51,7 @@
 		F9166D29254B765300EFE32C /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
 		F9166D2E254B88EE00EFE32C /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
 		F9166D33254B8CCD00EFE32C /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
+		F92EB09A2559927400868B1F /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		F9927D9F2548B852000DA50C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F9D7D4BC25488CF300B2BE56 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D7D4BF25488CF300B2BE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				F9166D29254B765300EFE32C /* SpotListViewController.swift */,
 				F9166D2E254B88EE00EFE32C /* SpotTableViewCell.swift */,
 				F9166D33254B8CCD00EFE32C /* SpotDetailViewController.swift */,
+				F92EB09A2559927400868B1F /* ReviewTableViewController.swift */,
 				F9D7D4C525488CF300B2BE56 /* Main.storyboard */,
 				F9D7D4C825488CF800B2BE56 /* Assets.xcassets */,
 				F9D7D4CA25488CF800B2BE56 /* LaunchScreen.storyboard */,
@@ -373,6 +376,7 @@
 				F9D7D4C425488CF300B2BE56 /* LogInViewController.swift in Sources */,
 				F9D7D4C025488CF300B2BE56 /* AppDelegate.swift in Sources */,
 				F9166D34254B8CCD00EFE32C /* SpotDetailViewController.swift in Sources */,
+				F92EB09B2559927400868B1F /* ReviewTableViewController.swift in Sources */,
 				F9F871F125505E5000F25AB4 /* Spots.swift in Sources */,
 				F9166D2F254B88EE00EFE32C /* SpotTableViewCell.swift in Sources */,
 				F9F8725925506F4500F25AB4 /* APIKeys.swift in Sources */,
