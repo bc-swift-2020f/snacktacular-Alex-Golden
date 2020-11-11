@@ -496,7 +496,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Kxa-fR-gOx">
                                                     <rect key="frame" x="103" y="29" width="208" height="40"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGD-ET-tHP">
+                                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGD-ET-tHP">
                                                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
@@ -511,7 +511,7 @@
                                                                 <action selector="starButtonPressed:" destination="CxJ-Jf-8SL" eventType="touchUpInside" id="o0f-Ti-JfT"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arf-bo-rJZ">
+                                                        <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arf-bo-rJZ">
                                                             <rect key="frame" x="42" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
@@ -523,7 +523,7 @@
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                             </state>
                                                         </button>
-                                                        <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-Ct-bsL">
+                                                        <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-Ct-bsL">
                                                             <rect key="frame" x="84" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
@@ -535,7 +535,7 @@
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                             </state>
                                                         </button>
-                                                        <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwp-73-b5W">
+                                                        <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwp-73-b5W">
                                                             <rect key="frame" x="126" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
@@ -547,7 +547,7 @@
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                             </state>
                                                         </button>
-                                                        <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRD-nU-Ord">
+                                                        <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRD-nU-Ord">
                                                             <rect key="frame" x="168" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
@@ -589,7 +589,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4i-7G-cne">
-                                                    <rect key="frame" x="8" y="12" width="82" height="24"/>
+                                                    <rect key="frame" x="8" y="10" width="82" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="82" id="S0M-qP-VKw"/>
                                                         <constraint firstAttribute="height" constant="24" id="q9k-f3-Yf6"/>
@@ -599,7 +599,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I5G-9m-SJn">
-                                                    <rect key="frame" x="93" y="5" width="313" height="34"/>
+                                                    <rect key="frame" x="98" y="5" width="308" height="34"/>
                                                     <color key="backgroundColor" name="UI Element Background"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="T6J-pP-ksO"/>
@@ -613,10 +613,10 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="I5G-9m-SJn" firstAttribute="leading" secondItem="o4i-7G-cne" secondAttribute="trailing" constant="3" id="JdN-MH-gwT"/>
+                                                <constraint firstItem="I5G-9m-SJn" firstAttribute="leading" secondItem="o4i-7G-cne" secondAttribute="trailing" constant="8" id="JdN-MH-gwT"/>
                                                 <constraint firstItem="I5G-9m-SJn" firstAttribute="top" secondItem="0QL-3H-vvF" secondAttribute="top" constant="5" id="M06-5G-J3p"/>
                                                 <constraint firstAttribute="trailing" secondItem="I5G-9m-SJn" secondAttribute="trailing" constant="8" id="N6u-1Q-pO9"/>
-                                                <constraint firstItem="o4i-7G-cne" firstAttribute="top" secondItem="0QL-3H-vvF" secondAttribute="top" constant="12" id="OAQ-qI-kdh"/>
+                                                <constraint firstItem="o4i-7G-cne" firstAttribute="top" secondItem="0QL-3H-vvF" secondAttribute="top" constant="10" id="OAQ-qI-kdh"/>
                                                 <constraint firstItem="o4i-7G-cne" firstAttribute="leading" secondItem="0QL-3H-vvF" secondAttribute="leading" constant="8" id="r27-oq-XuE"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -653,13 +653,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="review here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JuY-E6-uFf">
-                                                    <rect key="frame" x="28" y="47" width="358" height="240"/>
+                                                    <rect key="frame" x="28" y="47" width="358" height="223"/>
                                                     <color key="backgroundColor" name="UI Element Background"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="240" id="Z4S-H3-DMp"/>
-                                                    </constraints>
                                                     <color key="textColor" systemColor="labelColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -670,6 +667,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="JuY-E6-uFf" secondAttribute="trailing" constant="8" id="IXj-KP-J6P"/>
                                                 <constraint firstItem="orv-jX-bY8" firstAttribute="top" secondItem="5Wd-F1-qJ5" secondAttribute="topMargin" constant="12" id="QAc-Rx-0xX"/>
                                                 <constraint firstItem="JuY-E6-uFf" firstAttribute="leading" secondItem="5Wd-F1-qJ5" secondAttribute="leadingMargin" constant="8" id="jXN-4Z-r39"/>
+                                                <constraint firstAttribute="bottom" secondItem="JuY-E6-uFf" secondAttribute="bottom" constant="8" id="rw8-6y-DxV"/>
                                                 <constraint firstItem="Vrf-fQ-v1I" firstAttribute="leading" secondItem="5Wd-F1-qJ5" secondAttribute="leadingMargin" constant="8" id="zkm-7a-w6S"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -720,7 +718,7 @@
                                 <action selector="cancelButtonPressed:" destination="CxJ-Jf-8SL" id="61Q-PR-FP5"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="7Dl-Xi-SSw">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="7Dl-Xi-SSw">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="CxJ-Jf-8SL" id="YkX-lm-XiL"/>
                             </connections>
@@ -854,7 +852,7 @@
             <color red="0.93333333333333335" green="0.4823529411764706" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="UI Element Background">
-            <color red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.92100000381469727" green="0.92100000381469727" blue="0.92100000381469727" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
