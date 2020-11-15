@@ -95,6 +95,15 @@ func updateMap() {
             let selectedIndexpath = tableView.indexPathForSelectedRow!
             destination.review = reviews.reviewArray[selectedIndexpath.row]
             destination.spot = spot
+        case "AddPhoto":
+            let navigationController = segue.destination as! UINavigationController
+            let destination = navigationController.viewControllers.first as! PhotoViewController
+            destination.spot = spot
+        case "ShowPhoto":
+            let destination = segue.destination as! PhotoViewController
+//            let selectedIndexpath = tableView.indexPathForSelectedRow!
+//            destination.review = reviews.reviewArray[selectedIndexpath.row]
+            destination.spot = spot
             
         default:
             print("couldnt find a case for \(segue.identifier)")
@@ -171,8 +180,18 @@ func updateMap() {
         performSegue(withIdentifier: "AddReview", sender: nil)
         }
     }
+    @IBAction func photoButtonPressed(_ sender: UIButton) {
+            if spot.documentID == "" {
+                saveCancelAlert(title: "This venue has not been saved", message: "You must save the venue before you review it", segueIdentifier: "AddPhoto")
+            } else {
+            performSegue(withIdentifier: "AddPhoto", sender: nil)
+            }
+        }
+    }
     
-}
+    
+    
+
 extension SpotDetailViewController: GMSAutocompleteViewControllerDelegate {
 
   // Handle the user's selection.
