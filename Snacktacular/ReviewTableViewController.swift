@@ -44,6 +44,11 @@ class ReviewTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //hide keyboard when tap outside
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        
         guard spot != nil else {
             print("Error no spot passed to reviewtableVC")
             return
@@ -105,6 +110,12 @@ class ReviewTableViewController: UITableViewController {
         }
     }
     @IBAction func reviewTitleChanged(_ sender: UITextField) {
+        let noSpaces = reviewTitleField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        if noSpaces != "" {
+            saveBarButton.isEnabled = true
+        } else {
+            saveBarButton.isEnabled = false
+        }
     }
     @IBAction func reviewTitleDonePressed(_ sender: UITextField) {
     }

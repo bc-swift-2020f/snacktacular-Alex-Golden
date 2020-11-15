@@ -165,14 +165,19 @@
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Restaurant Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Nl-Py-HNF">
                                             <rect key="frame" x="8" y="8" width="398" height="33"/>
+                                            <color key="backgroundColor" name="UI Element Background"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="33" id="eiQ-uQ-1ht"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="nameFieldChanged:" destination="aXK-Zj-KPT" eventType="editingChanged" id="eRI-8y-61V"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gxk-6i-eVt">
                                             <rect key="frame" x="8" y="43" width="398" height="17"/>
+                                            <color key="backgroundColor" name="UI Element Background"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -385,14 +390,14 @@
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Zcw-sR-XVn"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="vxk-PC-vq1">
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="vxk-PC-vq1">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xuX-4r-wd0">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="aXK-Zj-KPT" id="7JA-xl-1kW"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="fpO-CC-MIj">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="fpO-CC-MIj">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="saveButtonPressed:" destination="aXK-Zj-KPT" id="W1x-Xv-AC4"/>
@@ -402,9 +407,11 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextField" destination="gxk-6i-eVt" id="YmH-Z4-4Lc"/>
+                        <outlet property="cancelBarButton" destination="xuX-4r-wd0" id="Ocg-lM-5R3"/>
                         <outlet property="mapView" destination="8Am-MJ-Euu" id="ngu-Gi-P7y"/>
                         <outlet property="nameTextField" destination="9Nl-Py-HNF" id="py1-TW-K5P"/>
                         <outlet property="ratingLabel" destination="gvl-Zx-G6E" id="K8j-5O-sZL"/>
+                        <outlet property="saveBarButton" destination="fpO-CC-MIj" id="eNH-Ju-Goo"/>
                         <outlet property="tableView" destination="O9S-bI-nnL" id="gcy-gX-2Ym"/>
                         <segue destination="Sv3-3K-ldk" kind="presentation" identifier="AddReview" modalPresentationStyle="fullScreen" id="Nio-cb-WrL"/>
                     </connections>
