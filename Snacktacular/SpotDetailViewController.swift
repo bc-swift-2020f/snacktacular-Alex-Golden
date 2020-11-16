@@ -10,7 +10,7 @@ import GooglePlaces
 import MapKit
 import Contacts
 
-class SpotDetailViewController: UIViewController {
+class SpotDetailViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var ratingLabel: UILabel!
@@ -18,6 +18,7 @@ class SpotDetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var saveBarButton: UIBarButtonItem!
     @IBOutlet weak var cancelBarButton: UIBarButtonItem!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     
     var spot: Spot!
@@ -25,6 +26,7 @@ class SpotDetailViewController: UIViewController {
     let regionDistance: CLLocationDegrees = 750.0
     var locationManager: CLLocationManager!
     var reviews: Reviews!
+    var photos: Photos!
     var imagePickerController = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -36,6 +38,8 @@ class SpotDetailViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         imagePickerController.delegate = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
         getLocation()
         if spot == nil {
             spot = Spot()
@@ -47,6 +51,7 @@ class SpotDetailViewController: UIViewController {
         }
         setupMapView()
         reviews = Reviews()
+        photos = Photos()
             updateUserInterface()
         }
     
@@ -59,6 +64,9 @@ class SpotDetailViewController: UIViewController {
         
         reviews.loadData(spot: spot) {
             self.tableView.reloadData()
+        }
+        photos.loadData(spot: spot) {
+            self.collectionView.reloadData()
         }
     }
     
@@ -110,8 +118,12 @@ func updateMap() {
             destination.photo = photo
         case "ShowPhoto":
             let destination = segue.destination as! PhotoViewController
-//            let selectedIndexpath = tableView.indexPathForSelectedRow!
-//            destination.review = reviews.reviewArray[selectedIndexpath.row]
+            guard let selectedIndexPath = collectionView.indexPathsForSelectedItems?.first
+            else {
+                print("error: couldnt get selected collection item ")
+                return
+            }
+            destination.photo = photos.photoArray[selectedIndexPath.row]
             destination.spot = spot
             
             
@@ -335,7 +347,22 @@ extension SpotDetailViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension spotDetailViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension SpotDetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return photos.photoArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let photoCell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! SpotPhotoCollectionViewCell
+        photoCell.spot = spot
+        photoCell.photo = photos.photoArray[indexPath.row]
+        return photoCell
+    }
+    
+    
+}
+
+extension SpotDetailViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         photo = Photo()
         if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {

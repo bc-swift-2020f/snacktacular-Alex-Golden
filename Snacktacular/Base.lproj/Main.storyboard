@@ -198,14 +198,30 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BPK-gN-2ZZ">
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BPK-gN-2ZZ" userLabel="Photo Cell" customClass="SpotPhotoCollectionViewCell" customModule="Snacktacular" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="95f-8z-UyR">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o59-Rg-ILQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="2t4-VM-Sy2"/>
+                                                                    <constraint firstAttribute="height" constant="100" id="kTn-Bd-I4X"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="o59-Rg-ILQ" firstAttribute="top" secondItem="95f-8z-UyR" secondAttribute="top" id="IpM-9k-sJF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="o59-Rg-ILQ" secondAttribute="trailing" id="KsC-an-KNb"/>
+                                                            <constraint firstAttribute="bottom" secondItem="o59-Rg-ILQ" secondAttribute="bottom" id="M9C-8D-bwX"/>
+                                                            <constraint firstItem="o59-Rg-ILQ" firstAttribute="leading" secondItem="95f-8z-UyR" secondAttribute="leading" id="sgq-hb-bal"/>
+                                                        </constraints>
                                                     </collectionViewCellContentView>
                                                     <connections>
+                                                        <outlet property="photoImageView" destination="o59-Rg-ILQ" id="sWV-R9-Glq"/>
                                                         <segue destination="TjU-bI-kyP" kind="show" identifier="ShowPhoto" id="gmU-eV-sZN"/>
                                                     </connections>
                                                 </collectionViewCell>
@@ -414,6 +430,7 @@
                     <connections>
                         <outlet property="addressTextField" destination="gxk-6i-eVt" id="YmH-Z4-4Lc"/>
                         <outlet property="cancelBarButton" destination="xuX-4r-wd0" id="Ocg-lM-5R3"/>
+                        <outlet property="collectionView" destination="UsX-cZ-6Ey" id="I5Z-KC-GzK"/>
                         <outlet property="mapView" destination="8Am-MJ-Euu" id="ngu-Gi-P7y"/>
                         <outlet property="nameTextField" destination="9Nl-Py-HNF" id="py1-TW-K5P"/>
                         <outlet property="ratingLabel" destination="gvl-Zx-G6E" id="K8j-5O-sZL"/>

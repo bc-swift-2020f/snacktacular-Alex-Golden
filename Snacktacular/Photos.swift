@@ -1,14 +1,14 @@
 //
-//  Reviews.swift
+//  Photos.swift
 //  Snacktacular
 //
-//  Created by Alex Golden on 11/9/20.
+//  Created by Alex Golden on 11/16/20.
 //
-import Foundation
 import Firebase
+import Foundation
 
-class Reviews {
-    var reviewArray: [Review] = []
+class Photos {
+    var photoArray: [Photo] = []
     var db: Firestore!
     init() {
         db = Firestore.firestore()
@@ -17,19 +17,18 @@ class Reviews {
         guard spot.documentID != "" else {
             return
         }
-        db.collection("spots").document(spot.documentID).collection("reviews").addSnapshotListener { (querySnapshot, error) in
+        db.collection("spots").document(spot.documentID).collection("photos").addSnapshotListener { (querySnapshot, error) in
             guard error == nil else {
                 print("Error adding the snapshot listener \(error!.localizedDescription)")
                 return completed()
             }
-            self.reviewArray = []
+            self.photoArray = []
             for document in querySnapshot!.documents {
-                let review = Review(dictionary: document.data())
-                review.documentID = document.documentID
-                self.reviewArray.append(review)
+                let photo = Photo(dictionary: document.data())
+                photo.documentID = document.documentID
+                self.photoArray.append(photo)
             }
             completed()
         }
     }
 }
-
