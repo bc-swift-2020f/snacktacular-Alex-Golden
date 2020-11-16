@@ -33,7 +33,7 @@ class Review {
     convenience init() {
         let reviewUserID = Auth.auth().currentUser?.uid ?? ""
         let reviewUserEmail = Auth.auth().currentUser?.email ?? "Unknown Email"
-        self.init(title: "", text: "", rating: 0, reviewUserID: reviewUserID, reviewUserEmail: reviewUserEmail, date: Date(), DocumentID: "")
+        self.init(title: "", text: "", rating: 0, reviewUserID: reviewUserID, reviewUserEmail: reviewUserEmail, date: Date(), documentID: "")
     }
     convenience init(dictionary: [String: Any]) {
         let title = dictionary["title"] as! String? ?? ""
@@ -45,7 +45,7 @@ class Review {
         let timeIntervalDate = dictionary["date"] as! TimeInterval? ?? TimeInterval()
         let date = Date(timeIntervalSince1970: timeIntervalDate)
         
-        self.init(title: title, text: text, rating: rating, reviewUserID: reviewUserID, reviewUserEmail: reviewUserEmail, date: date, DocumentID: documentID)
+        self.init(title: title, text: text, rating: rating, reviewUserID: reviewUserID, reviewUserEmail: reviewUserEmail, date: date, documentID: documentID)
     }
     
     func saveData(spot: Spot, completion: @escaping (Bool) -> ()) {

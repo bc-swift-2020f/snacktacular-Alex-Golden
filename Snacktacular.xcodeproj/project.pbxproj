@@ -12,6 +12,7 @@
 		F9166D2F254B88EE00EFE32C /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9166D2E254B88EE00EFE32C /* SpotTableViewCell.swift */; };
 		F9166D34254B8CCD00EFE32C /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9166D33254B8CCD00EFE32C /* SpotDetailViewController.swift */; };
 		F926773D2561CB28008ED1FD /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F926773C2561CB28008ED1FD /* PhotoViewController.swift */; };
+		F92677842561EFD9008ED1FD /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92677832561EFD9008ED1FD /* Photo.swift */; };
 		F92EB09B2559927400868B1F /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB09A2559927400868B1F /* ReviewTableViewController.swift */; };
 		F92EB0A02559992B00868B1F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB09F2559992B00868B1F /* Review.swift */; };
 		F92EB0A52559A78300868B1F /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB0A42559A78300868B1F /* Reviews.swift */; };
@@ -58,6 +59,7 @@
 		F9166D2E254B88EE00EFE32C /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
 		F9166D33254B8CCD00EFE32C /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
 		F926773C2561CB28008ED1FD /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		F92677832561EFD9008ED1FD /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		F92EB09A2559927400868B1F /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		F92EB09F2559992B00868B1F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		F92EB0A42559A78300868B1F /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				F9F871F025505E5000F25AB4 /* Spots.swift */,
 				F92EB09F2559992B00868B1F /* Review.swift */,
 				F92EB0A42559A78300868B1F /* Reviews.swift */,
+				F92677832561EFD9008ED1FD /* Photo.swift */,
 				F9D7D4C325488CF300B2BE56 /* LogInViewController.swift */,
 				F9166D29254B765300EFE32C /* SpotListViewController.swift */,
 				F9166D2E254B88EE00EFE32C /* SpotTableViewCell.swift */,
@@ -402,6 +405,7 @@
 				F9166D2F254B88EE00EFE32C /* SpotTableViewCell.swift in Sources */,
 				F926773D2561CB28008ED1FD /* PhotoViewController.swift in Sources */,
 				F92EB10D2559BBE600868B1F /* SpotReviewTableViewCell.swift in Sources */,
+				F92677842561EFD9008ED1FD /* Photo.swift in Sources */,
 				F9F8725925506F4500F25AB4 /* APIKeys.swift in Sources */,
 				F9F871A5254FB9CD00F25AB4 /* Spot.swift in Sources */,
 				F9D7D4C225488CF300B2BE56 /* SceneDelegate.swift in Sources */,

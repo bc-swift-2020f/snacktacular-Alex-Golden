@@ -81,5 +81,9 @@
 	<string>This app will need the device location in order to determine the distance from a spot to the device, and to plot the user&apos;s location on a map</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app will need the device location in order to determine the distance from a spot to the device, and to plot the user&apos;s location on a map</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs to access photos to add images. </string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs access to the photo library to add a photo.</string>
 </dict>
 </plist>
