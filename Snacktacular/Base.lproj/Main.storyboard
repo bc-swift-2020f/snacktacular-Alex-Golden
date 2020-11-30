@@ -80,6 +80,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="lKd-44-nqK" secondAttribute="bottom" constant="4" id="4rx-PG-Sww"/>
                                                 <constraint firstItem="sbe-Nj-UqQ" firstAttribute="leading" secondItem="rWy-IZ-lkV" secondAttribute="leading" constant="8" id="9Pv-1q-7ts"/>
                                                 <constraint firstItem="lKd-44-nqK" firstAttribute="leading" secondItem="rWy-IZ-lkV" secondAttribute="leading" constant="16" id="Bzr-4W-jyY"/>
+                                                <constraint firstItem="m0u-JU-NTO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lKd-44-nqK" secondAttribute="trailing" constant="8" symbolic="YES" id="Gwv-Wx-t75"/>
                                                 <constraint firstAttribute="trailing" secondItem="sbe-Nj-UqQ" secondAttribute="trailing" constant="8" id="N8W-3Y-F4z"/>
                                                 <constraint firstAttribute="bottom" secondItem="m0u-JU-NTO" secondAttribute="bottom" constant="4" id="YOi-X9-zox"/>
                                                 <constraint firstItem="sbe-Nj-UqQ" firstAttribute="top" secondItem="rWy-IZ-lkV" secondAttribute="top" constant="4" id="Zad-79-Ov7"/>
@@ -183,7 +184,7 @@
                                                         <constraint firstAttribute="height" constant="70" id="T0F-fp-Hl8"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Display name here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anS-kn-O8A">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Display name here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anS-kn-O8A">
                                                     <rect key="frame" x="86" y="4.5" width="308" height="27.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="20"/>
                                                     <nil key="textColor"/>
@@ -210,7 +211,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user since:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7N0-gR-ici">
                                                     <rect key="frame" x="125" y="52" width="80" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="80" id="3af-Kg-YKB"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="3af-Kg-YKB"/>
                                                         <constraint firstAttribute="height" constant="21" id="Ty6-oy-1n4"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -219,14 +220,17 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="uRf-W0-Hp1" firstAttribute="leading" secondItem="io8-yr-T0w" secondAttribute="trailing" constant="127" id="7MU-uF-0ql"/>
                                                 <constraint firstItem="1rW-eR-gjn" firstAttribute="top" secondItem="4Ym-3X-xLU" secondAttribute="topMargin" constant="24" id="8kc-Dy-Bhb"/>
+                                                <constraint firstItem="anS-kn-O8A" firstAttribute="trailing" secondItem="4Ym-3X-xLU" secondAttribute="trailingMargin" id="8pV-qc-g43"/>
                                                 <constraint firstAttribute="bottom" secondItem="io8-yr-T0w" secondAttribute="bottom" constant="5" id="C7k-uj-uwA"/>
-                                                <constraint firstItem="uRf-W0-Hp1" firstAttribute="leading" secondItem="7N0-gR-ici" secondAttribute="trailing" id="E6F-QY-3SH"/>
                                                 <constraint firstItem="1rW-eR-gjn" firstAttribute="leading" secondItem="io8-yr-T0w" secondAttribute="trailing" constant="8" id="JB6-Hm-HV6"/>
+                                                <constraint firstItem="uRf-W0-Hp1" firstAttribute="leading" secondItem="7N0-gR-ici" secondAttribute="trailing" id="OWe-g3-mb9"/>
                                                 <constraint firstAttribute="bottom" secondItem="7N0-gR-ici" secondAttribute="bottom" constant="7" id="SeO-JT-O5v"/>
                                                 <constraint firstItem="7N0-gR-ici" firstAttribute="top" secondItem="anS-kn-O8A" secondAttribute="bottom" constant="20" id="Wiq-7e-4NW"/>
+                                                <constraint firstItem="7N0-gR-ici" firstAttribute="leading" secondItem="io8-yr-T0w" secondAttribute="trailing" constant="47" id="Xaz-I7-O6J"/>
                                                 <constraint firstItem="io8-yr-T0w" firstAttribute="top" secondItem="4Ym-3X-xLU" secondAttribute="top" constant="5" id="h21-RP-nms"/>
+                                                <constraint firstItem="anS-kn-O8A" firstAttribute="leading" secondItem="1rW-eR-gjn" secondAttribute="leading" id="j0y-6G-hu3"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uRf-W0-Hp1" secondAttribute="trailing" constant="20" symbolic="YES" id="r5h-t1-rdg"/>
                                                 <constraint firstItem="1rW-eR-gjn" firstAttribute="trailing" secondItem="4Ym-3X-xLU" secondAttribute="trailingMargin" constant="8" id="u2V-SN-hUc"/>
                                                 <constraint firstItem="io8-yr-T0w" firstAttribute="leading" secondItem="4Ym-3X-xLU" secondAttribute="leading" constant="8" id="u9e-Le-1pV"/>
                                                 <constraint firstItem="uRf-W0-Hp1" firstAttribute="top" secondItem="anS-kn-O8A" secondAttribute="bottom" constant="16" id="wOh-mV-TBM"/>
@@ -828,7 +832,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4i-7G-cne">
                                                     <rect key="frame" x="8" y="10" width="82" height="24"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="82" id="S0M-qP-VKw"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="S0M-qP-VKw"/>
                                                         <constraint firstAttribute="height" constant="24" id="q9k-f3-Yf6"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
@@ -872,7 +876,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrf-fQ-v1I">
                                                     <rect key="frame" x="28" y="23" width="51" height="24"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="51" id="7HB-J6-yjK"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="7HB-J6-yjK"/>
                                                         <constraint firstAttribute="height" constant="24" id="N2S-5A-8s6"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
@@ -883,7 +887,7 @@
                                                     <rect key="frame" x="227" y="23" width="175" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="KyU-fp-Cm4"/>
-                                                        <constraint firstAttribute="width" constant="175" id="VPZ-Eb-jyB"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="VPZ-Eb-jyB"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Italic" family="Avenir Next Condensed" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -898,6 +902,7 @@
                                                 </textView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="orv-jX-bY8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vrf-fQ-v1I" secondAttribute="trailing" constant="8" symbolic="YES" id="5oL-8E-VG9"/>
                                                 <constraint firstItem="JuY-E6-uFf" firstAttribute="top" secondItem="orv-jX-bY8" secondAttribute="bottom" constant="3" id="6at-tK-ch8"/>
                                                 <constraint firstItem="Vrf-fQ-v1I" firstAttribute="top" secondItem="5Wd-F1-qJ5" secondAttribute="topMargin" constant="12" id="D3l-H3-hlU"/>
                                                 <constraint firstItem="orv-jX-bY8" firstAttribute="trailing" secondItem="5Wd-F1-qJ5" secondAttribute="trailingMargin" constant="8" id="F5j-0W-RUt"/>
@@ -924,7 +929,7 @@
                                                     <rect key="frame" x="112" y="8" width="190" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="YHj-Za-oPl"/>
-                                                        <constraint firstAttribute="width" constant="190" id="cgb-wO-fPV"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="cgb-wO-fPV"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <state key="normal" title="Delete Review">

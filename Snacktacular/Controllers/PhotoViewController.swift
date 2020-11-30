@@ -96,7 +96,13 @@ class PhotoViewController: UIViewController {
         }
     }
     @IBAction func deleteButtonPressed(_ sender: UIBarButtonItem) {
-       
+        photo.deleteData(spot: spot) { (success) in
+            if success {
+                self.leaveViewController
+            } else {
+                print("delete unsuccessful")
+            }
+        }
     }
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         leaveViewController()

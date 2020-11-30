@@ -139,4 +139,31 @@ class Photo {
             }
         }
     }
+    func deleteData(spot: Spot, completion: @escaping (Bool) -> ()) {
+        let db = Firestore.firestore()
+        db.collection("spots").document(spot.documentID).collection("photos").document(documentID).delete { (error) in
+            if let error = error {
+                print("Error: error deleting photo \(self.documentID)")
+                completion(false)
+            } else {
+                self.deleteImage(spot: Spot)
+                    completion(true)
+                
+            }
+        }
+    }
+    private func deleteImage(spot: Spot) {
+        guard spot.documentID != "" else {
+            print("error did not pass a valid spot into delete image")
+            return
+        }
+        let storage = Storage.storage()
+        let storageRef = storage.reference().child(spot.documentID).child(documentID)
+        storageRef.delete {error in
+            if let error = error {
+                print(" error \(error.localizedDescription)")
+            }
+            print("photo deleted")
+        }
+    }
 }
