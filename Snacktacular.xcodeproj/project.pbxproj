@@ -15,6 +15,7 @@
 		F92677842561EFD9008ED1FD /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92677832561EFD9008ED1FD /* Photo.swift */; };
 		F92678D32562C7DC008ED1FD /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92678D22562C7DB008ED1FD /* Photos.swift */; };
 		F92679382562CD12008ED1FD /* SpotPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92679372562CD12008ED1FD /* SpotPhotoCollectionViewCell.swift */; };
+		F928B0072575516600E2D29B /* SnackUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F928B0062575516600E2D29B /* SnackUser.swift */; };
 		F92EB09B2559927400868B1F /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB09A2559927400868B1F /* ReviewTableViewController.swift */; };
 		F92EB0A02559992B00868B1F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB09F2559992B00868B1F /* Review.swift */; };
 		F92EB0A52559A78300868B1F /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EB0A42559A78300868B1F /* Reviews.swift */; };
@@ -64,6 +65,7 @@
 		F92677832561EFD9008ED1FD /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		F92678D22562C7DB008ED1FD /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		F92679372562CD12008ED1FD /* SpotPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		F928B0062575516600E2D29B /* SnackUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUser.swift; sourceTree = "<group>"; };
 		F92EB09A2559927400868B1F /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		F92EB09F2559992B00868B1F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		F92EB0A42559A78300868B1F /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				F92EB0A42559A78300868B1F /* Reviews.swift */,
 				F92677832561EFD9008ED1FD /* Photo.swift */,
 				F92678D22562C7DB008ED1FD /* Photos.swift */,
+				F928B0062575516600E2D29B /* SnackUser.swift */,
 				F9D7D4C325488CF300B2BE56 /* LogInViewController.swift */,
 				F9166D29254B765300EFE32C /* SpotListViewController.swift */,
 				F9166D2E254B88EE00EFE32C /* SpotTableViewCell.swift */,
@@ -416,6 +419,7 @@
 				F9F8725925506F4500F25AB4 /* APIKeys.swift in Sources */,
 				F9F871A5254FB9CD00F25AB4 /* Spot.swift in Sources */,
 				F9D7D4C225488CF300B2BE56 /* SceneDelegate.swift in Sources */,
+				F928B0072575516600E2D29B /* SnackUser.swift in Sources */,
 				F92679382562CD12008ED1FD /* SpotPhotoCollectionViewCell.swift in Sources */,
 				F9F871EC254FD1D800F25AB4 /* UIViewController+Alert.swift in Sources */,
 				F92EB1B9255B991D00868B1F /* UIView+addBorder.swift in Sources */,

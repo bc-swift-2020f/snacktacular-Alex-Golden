@@ -35,7 +35,18 @@ class LoginViewController: UIViewController {
             loginViewController.modalPresentationStyle = .fullScreen
             present(loginViewController, animated: true, completion: nil)
         } else { // user is already logged in
-            performSegue(withIdentifier: "FirstShowSegue", sender: nil)
+            guard let currentUser = authUI.auth?.currentUser else {
+                print("error")
+                return
+            }
+            let snackUser = SnackUser(user: currentUser)
+            snackUser.saveIfNewUser { (success) in
+                if success {
+                    performSegue(withIdentifier: "FirstShowSegue", sender: nil)
+                } else {
+                    print("failed to save new user")
+                }
+            }
         }
     }
     
